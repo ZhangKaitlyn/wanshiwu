@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+}
+body{
+	overflow-x: hidden;
+	padding: 0 15px;
+	font-family: "微软雅黑";
+	background-color: #F2F2F2;
+	color: #575757;
+}
+.text-muted{
+	font-size: 12px;
+}
+.btn-danger{
+	background-color: #FB7E68;
+	border: 1px solid #FB7E68;
+}
+.text-danger{
+	color: #FB7E68;
+}
+.whiteBg{
+	background-color: #FFF;
+}
+.vCenter{/*垂直居中*/	
+	display:-webkit-flex;
+	display: flex;
+	-webkit-align-items:center;
+	align-items:center;
+}
+.shadow{
+	box-shadow: 0px 2px 10px 1px #ccc;
+}
+
+.mainPart{
+	width: 100%;
+	max-width: 510px;
+	margin: 0 auto;
+}
+.fixedZone{
+	position: fixed;
+	width: 100%;
+	max-width: 540px;
+	z-index: 10;
+	top: 0;
+	padding: 5px 0;
+}
+.detailZone{
+	margin-top: 90px;
+}
+.userMsg{
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+.userMsg .col-md-7,.fixedZone .col-md-7{
+	padding-left: 0;
+}
+.msgZone{
+	padding: 20px 15px;
+}
+.msgZone .label-danger{
+	background-color: transparent;
+	border: 1px solid #FB7E68;
+	color: #FB7E68;
+}
+.msgZone a{
+	color: #575757;
+}
+.state{
+	margin-top: 15px;
+	border-top: 2px solid #DDD;
+	padding: 15px;
+}
+.state .col-md-3:before{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 5px #333;
+	background-color: #FFF;
+	position: absolute;
+	top:-20px;
+	left: 45.5%;
+}
+.state .active:before{
+	background-color: #FB7E68;
+}
+.commentZone{
+	padding-bottom: 15px;
+	margin-top: 10px;
+}
+.commentZone .profile{
+	padding: 0;
+}
+.reply{
+	padding: 10px 15px;
+	background-color: #E9EAEE;
+	margin-top: 5px;
+}
+.reply:after{
+	position: absolute;
+	left: 5%;
+	border: 10px solid transparent;
+	border-bottom-color: #E9EAEE;
+	content: '';
+	width: 0;
+	height: 0;
+	top: -20px; 
+}
+.reply p:last-child{
+	margin-bottom: 0;
+}
